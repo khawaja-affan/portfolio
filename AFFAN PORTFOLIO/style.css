@@ -1,0 +1,789 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(7, 35, 59) 1.67%, rgb(4, 29, 52) 39.95%, rgb(4, 25, 45) 58.24%, rgb(4, 14, 24) 80.28%, rgb(5, 12, 22) 101.48%);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.SSS {
+  display: flex;
+  padding-top: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding-right: 6rem;
+  padding-top: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(223, 214, 214);
+  font-size: small;
+  font-family: sans-serif;
+}
+
+ul a {
+  position: relative;
+  color: rgb(216, 211, 211);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease 0.1s;
+  /* 0.1s delay */
+}
+
+ul a:active::after,
+a:focus::after {
+  width: 100%;
+}
+
+.Links {
+  display: flex;
+}
+
+nav>button {
+  border: hidden;
+  border-radius: 50px;
+  height: 55px;
+  width: 8.5rem;
+  color: white;
+  background-color: rgb(10, 148, 202);
+}
+
+nav>button>a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium
+}
+
+nav>button:hover {
+  border: 2px solid;
+  border-color: white;
+  background-color: #061222;
+  transition: background-color 0.3s ease 0.2s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  padding-left: 6rem;
+  padding-top: 10rem;
+}
+
+.image img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  right: 8rem;
+}
+
+.h3>h6 {
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #0788FF33;
+  border-radius: 4px;
+  padding: 5px 12px;
+}
+
+.name {
+  font-size: 30px;
+  line-height: 5rem;
+}
+
+.name>h1>span {
+  color: #0788ff;
+}
+
+.name>p {
+  font-size: 19px;
+  font-weight: 450;
+  letter-spacing: .01em;
+  line-height: 150%;
+  padding-right: 38%;
+}
+
+.button>button {
+  border: hidden;
+  border-radius: 50px;
+  height: 55px;
+  width: 13rem;
+  color: white;
+  background-color: rgb(10, 148, 202);
+}
+
+.button>button>a {
+  text-decoration: none;
+  color: white;
+  font-weight: 575;
+  font-size: medium;
+}
+
+.button>button>#arrow {
+  display: inline-flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+}
+
+.button>button:hover {
+  border: 2px solid;
+  border-color: white;
+  background-color: #061222;
+  transition: background-color 0.3s ease 0.2s;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding-top: 20px;
+}
+
+.link{
+  position: relative;
+  bottom: 15px;
+  left: 30px;
+}
+.link>a{
+  color: white;
+  font-size: 20px;
+  border: 2px solid;
+  border-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+  height: 46px;
+  width: 46px;
+  vertical-align: middle;
+  background-color: #0788ff;
+}
+.b-color{
+  background: #0788FF1A;
+  padding: 24px 0px;
+}
+.pics>img{
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 23%;
+}
+.about{
+  padding: 80px 0px;
+}
+
+.content{
+    margin: 0 200px;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content img{
+    font-weight: bolder;
+    color: white;
+}
+
+.main2{
+    display: flex;
+    margin: 50px 200px;
+}
+
+.main2 img{
+    width: 500px;
+    border: solid white 1px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 40px;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.text2 span{
+    width: 125px;
+    background-color: rgba(7, 136, 255, 0.2);
+    border-radius: 4px;
+    padding: 5px 12px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+}
+
+.text2 h2{
+    margin-top: 10px;
+    font-size: 45px;
+    line-height: 50px;
+    color: white;
+}
+
+.text2 p{
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.boxes span{
+    all: unset;
+}
+
+.box1{
+    background-color: rgba(255,255,255, 0.1);
+    border: white 1px solid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box1 h3{
+    font-size: 28px;
+    color: #0788ff;
+    margin-bottom: 8px;
+}
+
+.box1 label{
+    color: white;
+    font-size: 13px;
+    width: 50px;
+    display: block;
+}
+
+.box2{
+    background-color: rgba(255,255,255, 0.1);
+    border: white 1px solid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box2 h3{
+    font-size: 28px;
+    color: #0788ff;
+    margin-bottom: 8px;
+}
+
+.box2 label{
+    color: white;
+    font-size: 13px;
+    display: block;
+    width: 80px;
+}
+
+.box3{
+    background-color: rgba(255,255,255, 0.1);
+    border: white 1px solid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box3 h3{
+    font-size: 28px;
+    color: #0788ff;
+    margin-bottom: 8px;
+}
+
+.box3 label{
+    color: white;
+    font-size: 13px;
+    display: block;
+    width: 80px;
+}
+
+.aubtn{
+    margin-top: 30px;
+}
+
+.aubtn a button{
+    color: white;
+    background-color: #0788ff;
+    padding: 13px 30px;
+    border-radius: 40px;
+    border: none;
+}
+
+.aubtn a button:hover{
+    background-color: black;
+    border: solid white 1px;
+}
+
+#work{
+    background: rgba(7, 136, 255, 0.1);
+}
+
+.text3{
+    margin: 0 200px;
+    padding-top: 100px;
+}
+
+.text3 span{
+    background-color: rgba(7, 136, 255, 0.2);
+    border-radius: 4px;
+    padding: 5px 12px;
+    display: inline-block;
+    color: white;
+    font-family: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.text3 h2{
+    font-size: 40px;
+    color: white;
+}
+
+.slidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 200px;
+    padding-bottom: 100px;
+    gap: 20px;
+}
+
+.s1{
+  
+    padding: 14px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.s1 img{
+    width: 328px;
+    height: 246px;
+    border-radius: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info h5{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrow1 button{
+    all:unset;
+    background-color: #0788ff;
+    border-radius: 1000px;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    border: black solid;
+}
+
+.arrow1 a{
+    all: unset;
+    cursor: pointer;
+}
+
+.text4{
+    padding-top: 50px;
+    margin: 0 200px;
+}
+
+.text4 span{
+    background-color: rgba(7, 136, 255, 0.2);
+    border-radius: 4px;
+    padding: 5px 12px;
+    display: inline-block;
+    color: white;
+    font-family: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}   
+
+.text4 h2{
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+.carousal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 200px 0;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.c1{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    background-color: rgba(255,255,255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    border: white solid 1px;
+}
+
+.c1 img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.inside h5{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0788ff;
+}
+
+.inside p{
+    color: rgb(255, 255, 255);
+    border-bottom: white solid 1px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.inside span{
+    margin-top: 10px;
+}
+
+.checked{
+    color: yellow;
+}
+
+.experience{
+    background: rgba(7, 136, 255, 0.1);
+}
+
+.text5{
+    margin: 0 200px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.text5 span{
+    background-color: rgba(7, 136, 255, 0.2);
+    border-radius: 4px;
+    padding: 5px 12px;
+    display: inline-block;
+    color: white;
+    font-family: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.text5 h2{
+    font-size: 40px;
+    color: white;
+}
+
+ .exp{
+    background-color: rgba(7, 136, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 200px;
+    display: flex;
+    gap: 20px;
+ }
+
+
+.expbox{
+    border-radius: 10px;
+    background-color: #0788ff;
+    color: white;
+    padding: 20px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.expbox h4{
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.expbox span{
+    font-size: 14px;
+    opacity: .8;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.expbox p{
+    font-size: 16px;
+    white-space: nowrap;;
+}
+
+.expbox label{
+    margin-top: 10px;
+    align-self: flex-start;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.expbio h5{
+    font-size: 32px;
+    color: white;
+}
+
+.expbio p{
+    font-size: 16px;
+    color: white;
+    opacity: .8;
+    margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #062b53;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  gap: 40px;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-left img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  border: white solid 1px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info h4 {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.contact-info p {
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.social-icons > .insta > a, .git > a, .linkedin > a{
+  color: white;
+  font-size: 20px;
+  border: 2px solid;
+  border-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+  height: 46px;
+  width: 46px;
+  background-color: #0788ff;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-right {
+  flex: 2;
+}
+
+.contact-right h1 {
+  color: white; 
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-right p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input {
+  flex: 1;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: 1px solid #1e3a8a;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+button {
+  padding: 15px;
+  background: #1d90ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1c7dd9;
+}
+
+footer{
+    border-top: rgba(255, 255, 255, .1) solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.text2 {
+  animation-delay: 0.3s;
+}
+
+.text3 {
+  animation-delay: 0.6s;
+}
+
+.text4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.name,
+.text2,
+.text3,
+.text4,
+.text5,
+.contact-right {
+  animation: fadeSlideIn 1s ease-out forwards;
+}
